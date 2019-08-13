@@ -1,22 +1,21 @@
 import React, {Component} from "react"
+import Header from "../components/Header";
 
 class PageTemplate extends Component {
-    render() {
-        const siteMetadata = this.props.data.site.siteMetadata
-        const currentPage = this.props.data.wordpressPage
+  render() {
+    const siteMetadata = this.props.data.site.siteMetadata
+    const pageData = this.props.data.wordpressPage;
+    console.log(pageData.acf.logo);
 
-        console.log(currentPage)
-
-        return (
-            <div>
-                <h1 dangerouslySetInnerHTML={{__html: currentPage.title}}/>
-                <div dangerouslySetInnerHTML={{__html: currentPage.content}}/>
-
-                <p dangerouslySetInnerHTML={{__html: currentPage.date}} />
-                <p dangerouslySetInnerHTML={{__html: currentPage.slug}} />
-            </div>
-        )
-    }
+    return (
+      <div>
+        <Header logo={pageData.acf.logo}
+                linkedin={pageData.acf.linkedin}
+                btn={pageData.acf.btn}
+        />
+      </div>
+    )
+  }
 }
 
 export default PageTemplate
@@ -28,7 +27,11 @@ export const pageQuery = graphql`
             content
             slug
             id
-            date(formatString: "MMMM DD, YYYY")
+            acf {
+               logo
+               linkedin
+               btn    
+            }
         }
         site {
             id

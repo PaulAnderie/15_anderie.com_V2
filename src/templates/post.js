@@ -52,9 +52,6 @@ export const pageQuery = graphql`
         wordpressPost(id: { eq: $id }) {
             title
             content
-            acf {
-                facebook
-            }
         }
         site {
             siteMetadata {
