@@ -1,4 +1,27 @@
-.headerWrapper{
+.header{
     width: 100%;
     height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.header .logo{
+    max-width: 200px;
+    max-height: 70px;
+    margin-right: 20px;
+}
+.header .linkedin{
+    max-height: 50px;
+    max-width: 190px;
+}
+.header .logoWrapper{
+    display: flex;
+    align-items: center;
+}
+.header .btn{
+    min-width: 255px;
+    min-height: 54px;
 }

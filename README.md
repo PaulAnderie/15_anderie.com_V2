@@ -1,6 +1,18 @@
-# Gatsby.js + WordPress
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
 
-This is a repository for the [Watch and Learn tutorial series](http://watch-learn.com/series/gatsbyjs-wordpress) about making websites using [Gatsby.js](https://www.gatsbyjs.org/) and WordPress.
+## 🚀 Quick start in 2 simple steps
 
-## Episodes
-Every episode will have it's own branch. If you want to get the code for the specific episode use the branch menu and select the episode you want. The master branch is of course the first episode.
+### Install the Gatsby CLI.
+```npm install -g gatsby-cli```
+```npm install```
+
+#### Start development server.
+```gatsby develop --open```
+
+open 
+```localhost:8000/sample-page/```

@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  background: #FBFBFF;
 }
 article,
 aside,
@@ -59,7 +60,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 48px;;
   margin: .67em 0;
 }
 mark {
@@ -621,4 +622,15 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.btn{
+    background: #173FCD;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
 }

@@ -8,20 +8,6 @@ class PostsTemplate extends Component {
 
         return(
             <div>
-                <h1>Posts</h1>
-
-                {data.allWordpressPost.edges.map(({node}) => (
-                    <div key={node.slug} className={"post"} style={{ marginBottom: 50 }}>
-                        <Link to={'post/' + node.slug}>
-                            <h3>{node.title}</h3>
-                        </Link>
-
-                        <div className={"post-content"} dangerouslySetInnerHTML={{__html: node.excerpt}} />
-
-                        {node.date}
-                    </div>
-                ))}
-
             </div>
         )
     }
