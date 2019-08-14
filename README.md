@@ -8,8 +8,7 @@
 ## 🚀 Quick start in 2 simple steps
 
 ### Install the Gatsby CLI.
-```npm install -g gatsby-cli```
-```npm install```
+```yarn install```
 
 #### Start development server.
 ```gatsby develop --open```

@@ -39,11 +39,6 @@ export const pageQuery = graphql`
             content
             slug
             id
-            polylang_current_lang
-            polylang_translations{
-              wordpress_id
-              locale
-            }
             acf {
                logo{
                 source_url
