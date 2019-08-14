@@ -2,8 +2,10 @@ import React, {Component} from "react"
 import Header from "../components/Header";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
+import FAQ from "../components/FAQ/FAQ";
+import CompaniesList from "../components/CompaniesList/CompaniesList";
 
-class PageTemplate extends Component {
+class IndexPage extends Component {
   render() {
     const pageData = this.props.data.wordpressPage.acf;
     console.log(pageData);
@@ -25,12 +27,24 @@ class PageTemplate extends Component {
                title={pageData.about_title}
                description={pageData.about_description}
         />
+        <CompaniesList companiesTitle={pageData.companies_title}
+                       companiesLogo={pageData.companies_logo && pageData.companies_logo}
+        />
+        <FAQ titleAnswer={pageData.faq_title_answer}
+             titleQuestion={pageData.faq_title_qestion}
+             titleImg={pageData.faq_title_img && pageData.faq_title_img.source_url}
+             cardTitle={pageData.faq_card_title}
+             cardDescription={pageData.faq_card_description}
+             name={pageData.about_name}
+             location={pageData.about_location}
+             avatar={pageData.about_avatar && pageData.about_avatar.source_url}
+        />
       </div>
     )
   }
 }
 
-export default PageTemplate
+export default IndexPage
 
 export const pageQuery = graphql`
     query currentPageQuery($id: String!) {
@@ -60,6 +74,19 @@ export const pageQuery = graphql`
                about_btn
                about_title
                about_description
+               companies_title
+               companies_logo{
+                 companies_image {
+                   source_url
+                 }
+               }
+               faq_title_img{
+                 source_url
+               }
+               faq_title_answer
+               faq_title_qestion
+               faq_card_title
+               faq_card_description
             }
         }
         site {

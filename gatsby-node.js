@@ -22,7 +22,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
                 pages.forEach(edge => {
                     createPage({
-                        path: `/${edge.node.slug}/`,
+                        path: edge.node.slug === 'paul-landing' ? '/' : `/${edge.node.slug}/` ,
                         component: slash(pageTemplate),
                         context: {
                             id: edge.node.id,

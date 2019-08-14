@@ -5,7 +5,6 @@ class About extends Component {
   render() {
     const {name, location, avatar, btn, title, description} = this.props;
     return (
-      <div className='about-wrapper' >
         <div className='about'>
           <div className='about-header'>
             <div className='profile'>
@@ -21,7 +20,6 @@ class About extends Component {
           <p className='about-description'>{description}</p>
         </div>
 
-      </div>
     )
   }
 }

@@ -1,0 +1,16 @@
+.companies-list{
+    text-align: center;
+}
+.companies-list .title{
+
+}
+.companies-list .logo-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.companies-list .title{
+    margin-bottom: 50px;
+
+}
