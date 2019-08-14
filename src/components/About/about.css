@@ -28,9 +28,12 @@
 .about .profile-position h2{
     margin-bottom: 5px;
 }
-
+.about .profile-img{
+    border-radius: 50%;
+}
 .about .btn{
     padding: 20px 50px;
+
 }
 .about .about-description{
     margin: 0 15px;

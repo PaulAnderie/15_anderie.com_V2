@@ -9,13 +9,14 @@ class Header extends Component {
       <header className='header'
       >
         <div className='logoWrapper'>
-          <Link  className='logo' to="/">
+          <Link  className='logo' to="/ukraine-version/">
             <img src={logo} alt=""/>
           </Link>
           <Link className='linkedin' to="/">
             <img src={linkedin} alt=""/>
           </Link>
         </div>
+
         <button className='btn'>
           {btn}
         </button>

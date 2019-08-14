@@ -31,25 +31,25 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 })
 
                 // Posts detail
-                const posts = result.data.allWordpressPost.edges
-
-                createPaginatedPages({
-                    edges: posts,
-                    createPage: createPage,
-                    pageTemplate: "src/templates/posts.js",
-                    pageLength: 3,
-                    pathPrefix: "posts"
-                })
-
-                posts.forEach(edge => {
-                    createPage({
-                        path: `/post/${edge.node.slug}/`,
-                        component: slash(postTemplate),
-                        context: {
-                            id: edge.node.id,
-                        },
-                    });
-                })
+                // const posts = result.data.allWordpressPost.edges
+                //
+                // createPaginatedPages({
+                //     edges: posts,
+                //     createPage: createPage,
+                //     pageTemplate: "src/templates/posts.js",
+                //     pageLength: 3,
+                //     pathPrefix: "posts"
+                // })
+                //
+                // posts.forEach(edge => {
+                //     createPage({
+                //         path: `/post/${edge.node.slug}/`,
+                //         component: slash(postTemplate),
+                //         context: {
+                //             id: edge.node.id,
+                //         },
+                //     });
+                // })
 
             })
         )

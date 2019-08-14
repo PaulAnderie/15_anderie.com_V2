@@ -10,17 +10,17 @@ class PageTemplate extends Component {
 
     return (
       <div>
-        <Header logo={pageData.logo.source_url}
-                linkedin={pageData.linkedin.source_url}
+        <Header logo={pageData.logo && pageData.logo.source_url}
+                linkedin={pageData.linkedin && pageData.linkedin.source_url}
                 btn={pageData.header_btn}
         />
         <Hero title={pageData.hero_title}
               description={pageData.hero_description}
-              background={pageData.hero_background.source_url}
+              background={pageData.hero_background && pageData.hero_background.source_url}
         />
         <About name={pageData.about_name}
                location={pageData.about_location}
-               avatar={pageData.about_avatar.source_url}
+               avatar={pageData.about_avatar && pageData.about_avatar.source_url}
                btn={pageData.about_btn}
                title={pageData.about_title}
                description={pageData.about_description}
@@ -39,6 +39,11 @@ export const pageQuery = graphql`
             content
             slug
             id
+            polylang_current_lang
+            polylang_translations{
+              wordpress_id
+              locale
+            }
             acf {
                logo{
                 source_url
@@ -46,7 +51,7 @@ export const pageQuery = graphql`
                linkedin{
                 source_url
                }
-               header_btn    
+               header_btn
                hero_title
                hero_background {
                  source_url
