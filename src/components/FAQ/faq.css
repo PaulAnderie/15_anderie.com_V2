@@ -1,13 +1,50 @@
 .faq{
-
 }
 .faq-title{
     display: flex;
     justify-content: space-around;
-    margin-right: 20px;
 }
 
 .faq-title .title {
     max-width: 35%;
+}
+.faq .faq-card{
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    border-radius: 5px;
+}
+.faq .card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 70px;
+}
+.faq .card-title h4{
+    max-width: 50%;
+}
+.faq .faq-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: #ECECEC;
+    margin: 0 -30px -30px;
 
+}
+.faq .faq-about{
+    max-width: 40%;
+}
+.faq .status{
+    display: flex;
+    align-items: center;
+}
+.faq .status-logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+}
+.faq .faq-help{
+    margin-right: 50px;
 }

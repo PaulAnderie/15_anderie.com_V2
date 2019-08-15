@@ -6,11 +6,11 @@
 }
 .companies-list .logo-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
 }
 .companies-list .title{
     margin-bottom: 50px;
-
 }

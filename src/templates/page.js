@@ -4,6 +4,10 @@ import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
 import FAQ from "../components/FAQ/FAQ";
 import CompaniesList from "../components/CompaniesList/CompaniesList";
+import Services from "../components/Services/Services";
+import Trustpilot from "../components/Trustpilot/Trustpilot";
+import Events from "../components/Events/Events";
+import CTA from "../components/CTA/CTA";
 
 class IndexPage extends Component {
   render() {
@@ -30,14 +34,30 @@ class IndexPage extends Component {
         <CompaniesList companiesTitle={pageData.companies_title}
                        companiesLogo={pageData.companies_logo && pageData.companies_logo}
         />
+        <Services title={pageData.services_title}
+                  btn={pageData.services_btn}
+                  cards={pageData.service_card}
+        />
         <FAQ titleAnswer={pageData.faq_title_answer}
-             titleQuestion={pageData.faq_title_qestion}
+             titleQuestion={pageData.faq_title_question}
              titleImg={pageData.faq_title_img && pageData.faq_title_img.source_url}
              cardTitle={pageData.faq_card_title}
              cardDescription={pageData.faq_card_description}
              name={pageData.about_name}
              location={pageData.about_location}
-             avatar={pageData.about_avatar && pageData.about_avatar.source_url}
+             avatar={pageData.about_avatar.source_url}
+             about={pageData.about_avatar && pageData.faq_about}
+             availability={pageData.about_avatar && pageData.faq_availability}
+             help={pageData.about_avatar && pageData.faq_help}
+        />
+        <Events title={pageData.events_title}
+                subtitle={pageData.events_subtitle}
+                cards={pageData.events_card}
+        />
+        <Trustpilot/>
+        <CompaniesList companiesLogo={pageData.companies_logo && pageData.companies_logo} />
+        <CTA btn={pageData.cta_btn}
+             title={pageData.cta_title}
         />
       </div>
     )
@@ -80,13 +100,48 @@ export const pageQuery = graphql`
                    source_url
                  }
                }
+               services_title
+               services_btn
+               service_card{
+                 service_title
+                 service_description
+               }
                faq_title_img{
                  source_url
                }
                faq_title_answer
-               faq_title_qestion
+               faq_title_question
                faq_card_title
                faq_card_description
+               faq_about{
+                 about_title
+                 about_description
+               }
+               faq_availability{
+                 availability_title
+                 availability_status
+                 availability_color
+               }
+               faq_help{
+                 help_cta
+                 help_title
+               }
+               events_card{
+               event_btn
+               event_img{
+                 source_url
+               }
+               event_date
+               event_description
+               event_position_icon{
+                 source_url
+               }
+               event_position_text
+               }
+               events_title
+               events_subtitle
+               cta_btn
+               cta_title
             }
         }
         site {

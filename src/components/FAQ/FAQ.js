@@ -3,7 +3,8 @@ import './faq.css'
 
 class CompaniesList extends Component {
   render() {
-    const { titleAnswer, titleQuestion, titleImg, name, location, avatar, cardTitle, cardDescription} = this.props;
+    const { titleAnswer, titleQuestion, titleImg, name, location,
+            avatar, cardTitle, cardDescription, about, availability, help} = this.props;
     return (
       <div className='faq wrapper' >
         <div className='faq-title'>
@@ -22,11 +23,27 @@ class CompaniesList extends Component {
                 <span>{location}</span>
               </div>
             </div>
-            <h4></h4>
+            <h4>{cardTitle}</h4>
           </div>
-
-
+          <div className='card-description' dangerouslySetInnerHTML={{ __html: cardDescription }} />
+          <div className='faq-footer'>
+            <div className='faq-about'>
+              <h2>{about.about_title}</h2>
+              <p>{about.about_description}</p>
+            </div>
+            <div className='faq-availability'>
+              <h2>{availability.availability_title}</h2>
+              <div className='status'>
+                <span style={{backgroundColor: `${availability.availability_color}`}} className='status-logo'/>{availability.availability_status}
+              </div>
+            </div>
+            <div className='faq-help'>
+              <h2>{help.help_title}</h2>
+              <button className='btn'>{help.help_cta}</button>
+            </div>
+          </div>
         </div>
+
       </div>
     )
   }

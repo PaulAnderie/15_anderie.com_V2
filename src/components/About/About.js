@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     const {name, location, avatar, btn, title, description} = this.props;
     return (
-        <div className='about'>
+        <div className='about wrapper'>
           <div className='about-header'>
             <div className='profile'>
               <img className='profile-img' src={avatar} alt=""/>
