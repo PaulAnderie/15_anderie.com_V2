@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-top: 1px solid black;
+    padding: 60px 0 50px;
+}
+.footer .projects ul, .footer .legal ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .projects ul li, .footer .legal ul li{
+    margin: 0;
+}
+.footer .projects a, .footer .legal a{
+    text-decoration: none;
+    color: black;
+}
+.footer .media-socials{
+    text-align: center;
+}
+.footer .media-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

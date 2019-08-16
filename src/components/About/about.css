@@ -4,11 +4,11 @@
 .about{
     margin: 0 auto;
     position: relative;
-    top: -140px;
+    top: -40px;
     background: #FFFFFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    padding: 30px;
+    padding: 30px 80px 190px;
 }
 .about .about-header{
     display: flex;
@@ -24,7 +24,7 @@
     justify-content: center;
     margin-left: 30px;
 }
-.profile .profile-position h2{
+.profile .profile-position h1{
     margin-bottom: 5px;
 }
 .profile .profile-img{

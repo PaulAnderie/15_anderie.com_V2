@@ -5,8 +5,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1260px;
     margin: 0 auto;
+    position: fixed;
+    z-index: 99999999999999;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .header .logo{
     max-width: 200px;

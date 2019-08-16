@@ -25,7 +25,7 @@ class Events extends Component {
                 </div>
                 <div className='card-body'>
                   <div>{card.event_description}</div>
-                  <button className='btn'>
+                  <button className='btn white-with-border'>
                     {card.event_btn}
                   </button>
                 </div>

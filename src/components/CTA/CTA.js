@@ -7,8 +7,8 @@ class CTA extends Component {
     const { title,btn} = this.props;
     return (
       <div className='cta wrapper'>
-        <h1>{title}</h1>
-        <button className='btn'>{btn}</button>
+        <h2>{title}</h2>
+        <button className='btn white'>{btn}</button>
       </div>
     );
   }

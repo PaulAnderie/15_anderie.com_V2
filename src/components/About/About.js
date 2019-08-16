@@ -10,13 +10,13 @@ class About extends Component {
             <div className='profile'>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
-                <h2>{name}</h2>
+                <h1>{name}</h1>
                 <span>{location}</span>
               </div>
             </div>
             <button className='btn'>{btn}</button>
           </div>
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <p className='about-description'>{description}</p>
         </div>
 

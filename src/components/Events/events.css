@@ -6,18 +6,21 @@
     border-radius: 5px;
     max-width: 310px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F0F7F9;
+    display: flex;
+    flex-direction: column;
 }
 .events .cards-event{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .events .card-preview{
     position: relative;
+    line-height: 0;
 }
 .events .card-img{
     width: 100%;
     height: auto;
-
 }
 .events .position-icon{
     position: absolute;
@@ -40,11 +43,14 @@
 }
 .events .card-body{
     min-height: 250px;
+    height: 100%;
     padding: 15px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #F0F7F9;
+}
+.events .card-body .btn{
+    margin-top: 10px;
 }

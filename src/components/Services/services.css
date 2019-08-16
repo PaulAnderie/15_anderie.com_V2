@@ -9,7 +9,9 @@
     /*overflow-x: scroll;*/
     margin: 50px 0 100px;
 }
-
+.services .card-section .btn{
+    padding: 20px 45px;
+}
 .services .card{
     flex-wrap: nowrap;
     padding: 30px;

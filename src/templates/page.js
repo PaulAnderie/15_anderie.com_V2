@@ -8,6 +8,7 @@ import Services from "../components/Services/Services";
 import Trustpilot from "../components/Trustpilot/Trustpilot";
 import Events from "../components/Events/Events";
 import CTA from "../components/CTA/CTA";
+import Footer from "../components/Footer/Footer";
 
 class IndexPage extends Component {
   render() {
@@ -45,7 +46,7 @@ class IndexPage extends Component {
              cardDescription={pageData.faq_card_description}
              name={pageData.about_name}
              location={pageData.about_location}
-             avatar={pageData.about_avatar.source_url}
+             avatar={pageData.about_avatar && pageData.about_avatar.source_url}
              about={pageData.about_avatar && pageData.faq_about}
              availability={pageData.about_avatar && pageData.faq_availability}
              help={pageData.about_avatar && pageData.faq_help}
@@ -54,10 +55,18 @@ class IndexPage extends Component {
                 subtitle={pageData.events_subtitle}
                 cards={pageData.events_card}
         />
-        <Trustpilot/>
+        <Trustpilot title={pageData.trustpilot_title}
+                    subtitle={pageData.trustpilot_subtitle}
+        />
         <CompaniesList companiesLogo={pageData.companies_logo && pageData.companies_logo} />
         <CTA btn={pageData.cta_btn}
              title={pageData.cta_title}
+        />
+        <Footer foooterLogo={pageData.footer_logo}
+                projects={pageData.projects}
+                legal={pageData.legal}
+                mediaTitle={pageData.media_social_title}
+                mediaIcons={pageData.media_social_icons}
         />
       </div>
     )
@@ -140,8 +149,26 @@ export const pageQuery = graphql`
                }
                events_title
                events_subtitle
+               trustpilot_title
+               trustpilot_subtitle
                cta_btn
                cta_title
+               footer_logo
+               projects{
+                 project_link
+                 project_title
+               }
+               legal{
+                 legal_link
+                 legal_title
+               }
+               media_social_title
+               media_social_icons{
+                 media_link
+                 media_logo{
+                   source_url
+                 }
+               }
             }
         }
         site {

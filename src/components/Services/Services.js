@@ -47,7 +47,7 @@ class Services extends Component {
           {cards && cards.map(card => {
           return (
           <div className='card'>
-          <h3>{card.service_title}</h3>
+          <h2>{card.service_title}</h2>
           <p>{card.service_description}</p>
           </div>)
           })}
