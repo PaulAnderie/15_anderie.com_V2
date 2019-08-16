@@ -1,6 +1,6 @@
 .hero{
     position: relative;
-    top: 100px  ;
+    top: 100px;
     height: calc(100vh - 100px);
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +17,28 @@
    text-align: center;
 }
 .hero .description{
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     line-height: 33px;
+}
+@media screen and (max-width: 960px) {
+    .hero .title{
+        font-size: 30px;
+    }
+    .hero .description{
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .hero{
+        height: 275px;
+        top: 55px;
+    }
+    .hero .title{
+        font-size: 18px;
+    }
+    .hero .description{
+        display: none;
+    }
 }

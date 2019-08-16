@@ -7,7 +7,7 @@ class About extends Component {
     return (
         <div className='about wrapper'>
           <div className='about-header'>
-            <div className='profile'>
+            <div className='profile roboto'>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
                 <h1>{name}</h1>
@@ -16,7 +16,7 @@ class About extends Component {
             </div>
             <button className='btn'>{btn}</button>
           </div>
-          <h2>{title}</h2>
+          <h2 className='title'>{title}</h2>
           <p className='about-description'>{description}</p>
         </div>
 

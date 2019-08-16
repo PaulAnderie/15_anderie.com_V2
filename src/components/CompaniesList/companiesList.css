@@ -2,7 +2,7 @@
     text-align: center;
 }
 .companies-list .title{
-
+    color: black;
 }
 .companies-list .logo-list{
     display: flex;
@@ -10,6 +10,9 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
+}
+.companies-list .logo-list img{
+    margin-top: 20px;
 }
 .companies-list .title{
     margin-bottom: 50px;

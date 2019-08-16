@@ -1,12 +1,12 @@
 .services{
     text-align: center;
+
 }
 .services .card-section{
     display: flex;
     /*flex-wrap: nowrap;*/
     justify-content: space-between;
     text-align: center;
-    /*overflow-x: scroll;*/
     margin: 50px 0 100px;
 }
 .services .card-section .btn{
@@ -19,5 +19,18 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     margin: 0 45px;
-    min-width: 300px;
+    min-width: 195px;
+}
+@media screen and (max-width: 960px){
+    .services .card-section{
+        overflow-x: scroll;
+    }
+    .services .card{
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .services .card p{
+        font-size: 14px;
+        line-height: 21px;
+    }
 }

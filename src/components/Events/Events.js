@@ -11,8 +11,8 @@ class Events extends Component {
     const { title, subtitle, cards} = this.props;
     return (
       <div className='events wrapper'>
-        <h2>{title}</h2>
-        <p>{subtitle}</p>
+        <h3>{title}</h3>
+        <p className='events-subtitle'>{subtitle}</p>
         <div className='cards-event'>
           {cards && cards.map(card => {
             return (
@@ -32,7 +32,6 @@ class Events extends Component {
               </div>)
           })}
         </div>
-
       </div>
     );
   }

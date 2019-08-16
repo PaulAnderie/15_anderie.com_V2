@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 .profile{
     display: flex;
@@ -26,6 +27,7 @@
 }
 .profile .profile-position h1{
     margin-bottom: 5px;
+    text-align: left;
 }
 .profile .profile-img{
     border-radius: 50%;
@@ -34,6 +36,72 @@
     padding: 20px 50px;
 
 }
-.about .about-description{
+.about .about-description, .about .title{
     margin: 0 15px;
+}
+.about .title{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    .about{
+        padding: 25px 30px 40px;
+    }
+    .about .title{
+        font-size: 18px;
+    }
+    .about .about-header{
+        margin-bottom: 10px;
+    }
+    .profile{
+        display: flex;
+    }
+    .profile .profile-position{
+        margin-left: 20px;
+    }
+    .profile .profile-position h1{
+        font-size: 20px;
+    }
+    .profile .profile-img{
+        width: 35%;
+    }
+    .about .btn{
+        padding: 10px 20px;
+    }
+    .about .about-description{
+        margin: 5px 15px 0;
+
+    }
+}
+@media screen and (max-width: 760px) {
+    .about{
+        padding: 12px 20px 30px;
+    }
+    .about .title{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .profile{
+        display: flex;
+    }
+    .profile .profile-position{
+        margin-left: 20px;
+    }
+    .profile .profile-position h1, .profile .profile-position span{
+        font-size: 12px;
+    }
+    .profile .profile-img {
+        height: 35px;
+        width: auto;
+    }
+    .about .btn{
+        padding: 7px 10px;
+        white-space: nowrap;
+    }
+    .about .about-description{
+        margin: 15px 0 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

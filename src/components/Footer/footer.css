@@ -25,3 +25,23 @@
     align-items: center;
     justify-content: space-between;
 }
+.footer-menu{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-menu{
+        width: 100%;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    .footer .projects h2, .footer .legal h2{
+        margin-bottom: 5px;
+    }
+}

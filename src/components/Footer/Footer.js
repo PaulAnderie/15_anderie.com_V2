@@ -11,27 +11,28 @@ class Footer extends Component {
         <div>
           {foooterLogo}
         </div>
-        <div className='projects'>
-          <h2>Projects</h2>
-          <ul >
-            {projects.map((item)=>{
-              return( <li><a href={item.project_link}>{item.project_title}</a></li>)
-            })}
-          </ul>
+        <div className='footer-menu'>
+          <div className='projects'>
+            <h2>Projects</h2>
+            <ul >
+              {projects && projects.map((item)=>{
+                return( <li><a href={item.project_link}>{item.project_title}</a></li>)
+              })}
+            </ul>
+          </div>
+          <div className='legal'>
+            <h2>Legal</h2>
+            <ul>
+              {legal && legal.map((item)=>{
+                return( <li><a href={item.legal_link}>{item.legal_title}</a></li>)
+              })}
+            </ul>
+          </div>
         </div>
-        <div className='legal'>
-          <h2>Legal</h2>
-          <ul>
-            {legal.map((item)=>{
-              return( <li><a href={item.legal_link}>{item.legal_title}</a></li>)
-            })}
-          </ul>
-        </div>
-
         <div className='media-socials'>
           <h2>{mediaTitle}</h2>
           <div className='media-icons'>
-            {mediaIcons.length > 0 &&  mediaIcons.map((icon)=>{
+            {mediaIcons && mediaIcons.length > 0 &&  mediaIcons.map((icon)=>{
               return(<a href={icon.media_link}>
                 <img src={icon.media_logo.source_url} alt=""/>
               </a>)

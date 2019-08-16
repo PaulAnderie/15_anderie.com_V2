@@ -9,7 +9,7 @@ class Hero extends Component {
            style={{backgroundImage: `url(${background})`}}
       >
         <h1 className='title'>{title}</h1>
-        <p className='description'>{description}</p>
+        <p className='description roboto'>{description}</p>
 
       </div>
     )

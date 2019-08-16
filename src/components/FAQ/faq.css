@@ -54,3 +54,60 @@
 .faq .faq-help{
     margin-right: 50px;
 }
+@media screen and (max-width: 960px){
+    .faq .faq-title{
+        flex-direction: column;
+    }
+    .faq .faq-title img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .faq .faq-title .title {
+        max-width: 100%;
+        display: none;
+    }
+    .faq .card-title{
+        margin: 0 0 10px;
+    }
+    .faq .card-description p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .faq .faq-footer h2{
+        font-size: 24px;
+    }
+    .faq .faq-help{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .faq .card-title h4{
+        display: none;
+    }
+    .faq .card-description p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .faq .faq-card{
+        padding: 10px;
+    }
+    .faq .faq-footer{
+        padding: 10px;
+        margin: 0 -10px -10px;
+    }
+    .faq .faq-footer h2{
+        font-size: 12px;
+        margin-bottom: 5px;
+        line-height: 10px;
+    }
+    .faq .faq-footer p, .faq .faq-footer .status{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .faq .status-logo{
+        width: 15px;
+        height: 15px;
+    }
+
+}

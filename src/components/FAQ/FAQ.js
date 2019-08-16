@@ -16,10 +16,10 @@ class CompaniesList extends Component {
         </div>
         <div className='faq-card'>
           <div className='card-title'>
-            <div className='profile'>
+            <div className='profile roboto'>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
-                <h2>{name}</h2>
+                <h1>{name}</h1>
                 <span>{location}</span>
               </div>
             </div>
