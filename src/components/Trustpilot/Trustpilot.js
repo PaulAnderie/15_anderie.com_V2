@@ -7,7 +7,7 @@ class Trustpilot extends Component {
     return (
       <div className='trustpilot'>
         <h3>{title}</h3>
-        <p>{subtitle}</p>
+        <p className='subtitle'>{subtitle}</p>
         <div id="pewl" className="wrapper">
 
         </div>

@@ -11,6 +11,7 @@
 }
 .services .card-section .btn{
     padding: 20px 45px;
+    font-size: 28px;
 }
 .services .card{
     flex-wrap: nowrap;

@@ -16,7 +16,7 @@ class Header extends Component {
             <img src={linkedin} alt=""/>
           </Link>
         </div>
-        <button className='btn' onClick={()=>{Calendly.initPopupWidget({url: 'https://calendly.com/paul-anderie/ask-me-anything'});return false;}}>
+        <button className='btn'>
             {btn}
         </button>
       </header>

@@ -2,6 +2,10 @@
     max-width: 1300px;
     margin: 100px auto;
 }
+.trustpilot .subtitle{
+    max-width: 70%;
+    margin: 0 auto 80px;
+}
 .trustpilot p {
     text-align: center;
 }

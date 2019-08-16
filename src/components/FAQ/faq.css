@@ -54,6 +54,9 @@
 .faq .faq-help{
     margin-right: 50px;
 }
+.faq .mobile{
+    display: none;
+}
 @media screen and (max-width: 960px){
     .faq .faq-title{
         flex-direction: column;
@@ -85,6 +88,9 @@
     .faq .card-title h4{
         display: none;
     }
+    .faq .mobile{
+        display: block;
+    }
     .faq .card-description p{
         font-size: 14px;
         line-height: 18px;
@@ -108,6 +114,9 @@
     .faq .status-logo{
         width: 15px;
         height: 15px;
+    }
+    .faq .btn{
+        font-size: 10px;
     }
 
 }

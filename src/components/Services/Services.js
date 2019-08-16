@@ -1,48 +1,14 @@
 import React, {Component} from 'react'
-import Slider from 'react-slick';
-//
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import './services.css'
 
 class Services extends Component {
   render() {
-    const { title, btn, cards} = this.props;
-    const settings = {
-      speed: 500,
-      slidesToShow: 3,
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
+    const { title, btn, cards, subtitle} = this.props;
     return (
       <div className='services wrapper'>
-        <div dangerouslySetInnerHTML={{__html: title}}/>
+        <h3>{title}</h3>
+        <p>{subtitle}</p>
         <div className='card-section'>
           {cards && cards.map(card => {
           return (
@@ -52,7 +18,7 @@ class Services extends Component {
           </div>)
           })}
         </div>
-        <button className='btn'>
+        <button className='btn' onClick={()=>{Calendly.initPopupWidget({url: 'https://calendly.com/paul-anderie/ask-me-anything'});return false;}}>
           {btn}
         </button>
       </div>

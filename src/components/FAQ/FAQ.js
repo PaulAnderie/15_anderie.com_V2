@@ -4,7 +4,7 @@ import './faq.css'
 class CompaniesList extends Component {
   render() {
     const { titleAnswer, titleQuestion, titleImg, name, location,
-            avatar, cardTitle, cardDescription, about, availability, help} = this.props;
+            avatar, cardTitle, cardDescription, about, availability, help, mobileQuestion} = this.props;
     return (
       <div className='faq wrapper' >
         <div className='faq-title'>
@@ -12,15 +12,16 @@ class CompaniesList extends Component {
             <h3>{titleQuestion}</h3>
             <h2>{titleAnswer}</h2>
           </div>
+          <h3 className='mobile'>{mobileQuestion}</h3>
           <img src={titleImg} alt=""/>
         </div>
         <div className='faq-card'>
           <div className='card-title'>
-            <div className='profile roboto'>
+            <div className='profile'>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
-                <h1>{name}</h1>
-                <span>{location}</span>
+                <h1 className='roboto'>{name}</h1>
+                <span className='roboto'>{location}</span>
               </div>
             </div>
             <h4>{cardTitle}</h4>

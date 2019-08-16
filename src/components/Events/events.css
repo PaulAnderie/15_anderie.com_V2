@@ -13,6 +13,11 @@
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 0 40px;
+    text-decoration: none;
+}
+.events .card-description{
+    color: #2E3C70;
+    text-align: left;
 }
 .events .cards-event{
     display: flex;
@@ -35,7 +40,7 @@
 .events .position-text{
     position: absolute;
     color: white;
-    top: 15px;
+    top: 30px;
     left: 70px;
 }
 .events .date{
@@ -56,6 +61,10 @@
 }
 .events .card-body .btn{
     margin-top: 10px;
+}
+.events-subtitle{
+    max-width: 70%;
+    margin: 0 auto 80px;
 }
 @media screen and (max-width: 960px){
     .events .cards-event{

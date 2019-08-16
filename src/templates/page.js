@@ -36,11 +36,13 @@ class IndexPage extends Component {
                        companiesLogo={pageData.companies_logo && pageData.companies_logo}
         />
         <Services title={pageData.services_title}
+                  subtitle={pageData.services_subtitle}
                   btn={pageData.services_btn}
                   cards={pageData.service_card}
         />
         <FAQ titleAnswer={pageData.faq_title_answer}
              titleQuestion={pageData.faq_title_question}
+             mobileQuestion={pageData.faq_title_question_mobile}
              titleImg={pageData.faq_title_img && pageData.faq_title_img.source_url}
              cardTitle={pageData.faq_card_title}
              cardDescription={pageData.faq_card_description}
@@ -62,7 +64,7 @@ class IndexPage extends Component {
         <CTA btn={pageData.cta_btn}
              title={pageData.cta_title}
         />
-        <Footer foooterLogo={pageData.footer_logo}
+        <Footer foooterLogo={pageData.logo && pageData.logo.source_url}
                 projects={pageData.projects}
                 legal={pageData.legal}
                 mediaTitle={pageData.media_social_title}
@@ -91,7 +93,7 @@ export const pageQuery = graphql`
                }
                header_btn
                hero_title
-               hero_background {
+               hero_background  {
                  source_url
                }
                hero_description
@@ -110,9 +112,10 @@ export const pageQuery = graphql`
                  }
                }
                services_title
+               services_subtitle
                services_btn
-               service_card{
-                 service_title
+               service_card {
+                 service_title 
                  service_description
                }
                faq_title_img{
@@ -120,6 +123,7 @@ export const pageQuery = graphql`
                }
                faq_title_answer
                faq_title_question
+               faq_title_question_mobile
                faq_card_title
                faq_card_description
                faq_about{
@@ -136,6 +140,7 @@ export const pageQuery = graphql`
                  help_title
                }
                events_card{
+               target_blank
                event_btn
                event_img{
                  source_url
