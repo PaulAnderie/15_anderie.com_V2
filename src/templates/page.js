@@ -18,7 +18,7 @@ class IndexPage extends Component {
     return (
       <div>
         <Header logo={pageData.logo && pageData.logo.source_url}
-                linkedinImg={pageData.linkedin && pageData.linkedin.linkedin_img.source_url}
+                linkedinImg={pageData.linkedin.linkedin_img && pageData.linkedin.linkedin_img.source_url}
                 linkedinUrl={ pageData.linkedin.linkedin_url}
                 btn={pageData.header_btn}
         />
