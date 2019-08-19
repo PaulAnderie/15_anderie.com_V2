@@ -4,7 +4,7 @@ import './header.css'
 
 class Header extends Component {
   render() {
-    const {logo, linkedin, btn} = this.props;
+    const {logo, linkedinImg, linkedinUrl, btn} = this.props;
     return (
       <header className='header'
       >
@@ -12,9 +12,9 @@ class Header extends Component {
           <Link  className='logo' to="/ukraine-version/">
             <img src={logo} alt=""/>
           </Link>
-          <Link className='linkedin' to="/">
-            <img src={linkedin} alt=""/>
-          </Link>
+          <a className='linkedin' href={linkedinUrl}>
+            <img src={linkedinImg} alt=""/>
+          </a>
         </div>
         <button className='btn'>
             {btn}

@@ -8,16 +8,15 @@ import './events.css'
 
 class Events extends Component {
   render() {
-    const { title, subtitle, cards, link} = this.props;
-    console.log(link);
+    const { title, subtitle, cards} = this.props;
     return (
       <div className='events wrapper'>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p className='events-subtitle'>{subtitle}</p>
-        <div className='cards-event'>
-          {cards && cards.map(card => {
+        <div className='cards-event scrollbar'>
+          {cards && cards.map((card, index) => {
             return (
-              <a href={card.target_blank} className='card'>
+              <a key={index} href={card.target_blank} className='card'>
                 <div className='card-preview'>
                   <img className='card-img' src={card.event_img.source_url} alt=""/>
                   {card.event_position_icon && <span className='position-icon' style={{backgroundImage: `url(${card.event_position_icon.source_url})`}}/>}

@@ -6,7 +6,7 @@ class Trustpilot extends Component {
     const { title, subtitle } = this.props;
     return (
       <div className='trustpilot'>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p className='subtitle'>{subtitle}</p>
         <div id="pewl" className="wrapper">
 

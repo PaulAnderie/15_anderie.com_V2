@@ -9,8 +9,8 @@ class CompaniesList extends Component {
       <div className='faq wrapper' >
         <div className='faq-title'>
           <div className='title'>
-            <h3>{titleQuestion}</h3>
-            <h2>{titleAnswer}</h2>
+            <h4>{titleQuestion}</h4>
+            <h3>{titleAnswer}</h3>
           </div>
           <h3 className='mobile'>{mobileQuestion}</h3>
           <img src={titleImg} alt=""/>
@@ -20,8 +20,8 @@ class CompaniesList extends Component {
             <div className='profile'>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
-                <h1 className='roboto'>{name}</h1>
-                <span className='roboto'>{location}</span>
+                <h1>{name}</h1>
+                <span>{location}</span>
               </div>
             </div>
             <h4>{cardTitle}</h4>
@@ -29,17 +29,17 @@ class CompaniesList extends Component {
           <div className='card-description' dangerouslySetInnerHTML={{ __html: cardDescription }} />
           <div className='faq-footer'>
             <div className='faq-about'>
-              {about && <h2>{about.about_title}</h2>}
+              {about && <h3>{about.about_title}</h3>}
               {about && <p>{about.about_description}</p>}
             </div>
             <div className='faq-availability'>
-              {availability && <h2>{availability.availability_title}</h2>}
+              {availability && <h3>{availability.availability_title}</h3>}
               {availability && <div className='status'>
                 <span style={{backgroundColor: `${availability.availability_color}`}} className='status-logo'/>{availability.availability_status}
               </div>}
             </div>
             <div className='faq-help'>
-              {help && <h2>{help.help_title}</h2>}
+              {help && <h3>{help.help_title}</h3>}
               {availability && <button className='btn'>{help.help_cta}</button>}
             </div>
           </div>

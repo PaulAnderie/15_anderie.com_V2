@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');*/
+@font-face {
+    font-family: "Poppins-Black";
+    src: url("../assets/fonts/Poppins-Black.ttf") ;
+    font-weight: 900;
+
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../assets/fonts/Poppins-Regular.ttf") ;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../assets/fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+}
 
 html{
     box-sizing: border-box;
@@ -24,27 +38,29 @@ h1 {
   margin-bottom: 1.45rem;
   font-size: 48px;
   line-height: 1.1;
-  font-family: 'Montserrat', sans-serif;
 }
 h2 {
   margin-bottom: 1.45rem;
-  font-size: 28px;
+  font-size: 38px;
   line-height: 42px;
   margin-top: 0;
+  font-weight: 900;
 }
 h3 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 900;
+    margin-top: 0;
+}
+h4{
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    text-align: center;
 }
 
 p {
   font-size: 20px;
   line-height: 30px;
-}
-.roboto{
-    font-family: 'Roboto', sans-serif;
 }
 .btn{
     background: #173FCD;
@@ -55,6 +71,10 @@ p {
     font-size: 20px;
     text-transform: uppercase;
     padding: 10px 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #0c00cd;
 }
 .wrapper{
     max-width: 1160px;
@@ -75,6 +95,13 @@ p {
     background-color: white;
     border: 3px solid #173FCD;
     border-radius: 15px;
+}
+.btn.white:hover, .btn.white-with-border:hover{
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
 }
 
 @media  screen and (max-width: 1260px) {

@@ -13,12 +13,13 @@ import Footer from "../components/Footer/Footer";
 class IndexPage extends Component {
   render() {
     const pageData = this.props.data.wordpressPage.acf;
-    console.log(pageData);
+    console.log(this.props.data.wordpressPage.slug);
 
     return (
       <div>
         <Header logo={pageData.logo && pageData.logo.source_url}
-                linkedin={pageData.linkedin && pageData.linkedin.source_url}
+                linkedinImg={pageData.linkedin && pageData.linkedin.linkedin_img.source_url}
+                linkedinUrl={ pageData.linkedin.linkedin_url}
                 btn={pageData.header_btn}
         />
         <Hero title={pageData.hero_title}
@@ -69,6 +70,7 @@ class IndexPage extends Component {
                 legal={pageData.legal}
                 mediaTitle={pageData.media_social_title}
                 mediaIcons={pageData.media_social_icons}
+                slug={this.props.data.wordpressPage.slug}
         />
       </div>
     )
@@ -89,7 +91,10 @@ export const pageQuery = graphql`
                 source_url
                }
                linkedin{
-                source_url
+                linkedin_img{
+                   source_url
+                }
+                linkedin_url
                }
                header_btn
                hero_title

@@ -10,13 +10,13 @@ class About extends Component {
             <div className='profile '>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
-                <h1 className='roboto'>{name}</h1>
-                <span className='roboto'>{location}</span>
+                <h1>{name}</h1>
+                <span>{location}</span>
               </div>
             </div>
             <button className='btn' onClick={()=>{Calendly.initPopupWidget({url: 'https://calendly.com/paul-anderie/ask-me-anything'});return false;}}>{btn}</button>
           </div>
-          <h2 className='title'>{title}</h2>
+          <h3 className='title'>{title}</h3>
           <p className='about-description'>{description}</p>
         </div>
 
