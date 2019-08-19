@@ -15,6 +15,16 @@
     src: url("../assets/fonts/Poppins-Bold.ttf");
     font-weight: bold;
 }
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../assets/fonts/Poppins-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../assets/fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
 
 html{
     box-sizing: border-box;
@@ -56,6 +66,7 @@ h4{
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+    margin-top: 0;
 }
 
 p {
@@ -72,6 +83,7 @@ p {
     text-transform: uppercase;
     padding: 10px 30px;
     cursor: pointer;
+    font-weight: 600;
 }
 .btn:hover{
     background: #0c00cd;
