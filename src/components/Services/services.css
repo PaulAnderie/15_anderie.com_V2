@@ -1,6 +1,9 @@
 .services{
     text-align: center;
-
+}
+.services .subtitle{
+    max-width: 60%;
+    margin: 0 auto;
 }
 .services .card-section{
     display: flex;
@@ -9,9 +12,10 @@
     text-align: center;
     margin: 50px 0 100px;
 }
-.services .card-section .btn{
+.services .btn{
     padding: 20px 45px;
     font-size: 28px;
+    font-weight: 900;
 }
 .services .card{
     flex-wrap: nowrap;
@@ -37,5 +41,14 @@
     .services .card p{
         font-size: 14px;
         line-height: 21px;
+    }
+    .services .btn{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 760px){
+    .services .btn{
+        font-size: 14px;
+        padding: 14px 20px;
     }
 }

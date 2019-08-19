@@ -12,7 +12,7 @@ class Events extends Component {
     return (
       <div className='events wrapper'>
         <h2>{title}</h2>
-        <p className='events-subtitle'>{subtitle}</p>
+        <p className='subtitle'>{subtitle}</p>
         <div className='cards-event scrollbar'>
           {cards && cards.map((card, index) => {
             return (

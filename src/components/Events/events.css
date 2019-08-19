@@ -14,10 +14,12 @@
     flex-wrap: nowrap;
     margin: 0 40px 10px;
     text-decoration: none;
+    font-weight: 900;
 }
 .events .card-description{
     color: #2E3C70;
     text-align: left;
+    width: 100%;
 }
 .events .cards-event{
     display: flex;
@@ -40,8 +42,10 @@
 .events .position-text{
     position: absolute;
     color: white;
-    top: 30px;
+    top: 20px;
     left: 70px;
+    line-height: 20px;
+    text-align: left;
 }
 .events .date{
     position: absolute;
@@ -62,7 +66,7 @@
 .events .card-body .btn{
     margin-top: 10px;
 }
-.events-subtitle{
+.events .subtitle{
     max-width: 70%;
     margin: 0 auto 80px;
 }
@@ -73,14 +77,13 @@
 }
 
 @media screen and (max-width: 960px){
-
     .events .card{
         min-width: 195px;
     }
-}
-
-@media screen and (max-width: 760px) {
-    .events-subtitle{
-        display: none;
+    .events .card-description{
+        font-size: 16px;
+    }
+    .events .card-body .btn{
+        padding: 5px 15px;
     }
 }

@@ -27,7 +27,7 @@
     align-items: center;
 }
 .header .btn{
-    padding: 10px 30px;
+    padding: 13px 40px;
 }
 @media screen and (max-width: 760px){
     .header{

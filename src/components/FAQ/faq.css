@@ -10,9 +10,14 @@
     margin-bottom: 5px;
     color: #173FCD;
     text-transform: uppercase;
+    font-weight: 300;
 }
 .faq .faq-title .title {
     max-width: 35%;
+}
+.faq .faq-title img{
+    max-width: 50%;
+    margin-bottom: 20px;
 }
 .faq .faq-card{
     background: #FFFFFF;
@@ -24,9 +29,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 50px 70px;
+    margin: 0 10px 70px 50px;
 }
-.faq .card-title h3{
+.faq .card-title h4{
     max-width: 50%;
 }
 .faq .faq-footer{
@@ -62,12 +67,12 @@
         flex-direction: column;
     }
     .faq .faq-title img{
-        width: 70%;
-        margin: 0 auto;
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto 20px;
     }
     .faq .faq-title .title {
         max-width: 100%;
-        display: none;
     }
     .faq .card-title{
         margin: 0 0 10px;
@@ -85,11 +90,15 @@
 }
 
 @media screen and (max-width: 760px) {
-    .faq .card-title h4{
+    .faq{
+        margin-top: 60px;
+    }
+    .faq .card-title h4, .faq .faq-title .title{
         display: none;
     }
     .faq .mobile{
         display: block;
+        text-align: center;
     }
     .faq .card-description p{
         font-size: 14px;
@@ -101,6 +110,9 @@
     .faq .faq-footer{
         padding: 10px;
         margin: 0 -10px -10px;
+    }
+    .faq .faq-footer .faq-availability{
+        margin: 0 5px;
     }
     .faq .faq-footer h3{
         font-size: 12px;

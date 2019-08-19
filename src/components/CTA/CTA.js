@@ -8,7 +8,7 @@ class CTA extends Component {
     return (
       <div className='cta wrapper'>
         <h2>{title}</h2>
-        <button className='btn white'>{btn}</button>
+        <button className='btn white' onClick={()=>{Calendly.initPopupWidget({url: 'https://calendly.com/paul-anderie/ask-me-anything'});return false;}}>{btn}</button>
       </div>
     );
   }

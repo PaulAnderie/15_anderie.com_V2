@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "gatsby": "^1.9.279",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.37",
@@ -30,6 +34,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
     "prettier": "^1.11.0"
   }
 }

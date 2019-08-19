@@ -40,7 +40,7 @@ class CompaniesList extends Component {
             </div>
             <div className='faq-help'>
               {help && <h3>{help.help_title}</h3>}
-              {availability && <button className='btn'>{help.help_cta}</button>}
+              {availability && <button className='btn' onClick={()=>{Calendly.initPopupWidget({url: 'https://calendly.com/paul-anderie/ask-me-anything'});return false;}}>{help.help_cta}</button>}
             </div>
           </div>
         </div>

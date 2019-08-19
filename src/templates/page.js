@@ -69,7 +69,8 @@ class IndexPage extends Component {
                 projects={pageData.projects}
                 legal={pageData.legal}
                 mediaTitle={pageData.media_social_title}
-                mediaIcons={pageData.media_social_icons}
+                mediaUrls={pageData.media_social_urls}
+                linkedinUrl={ pageData.linkedin.linkedin_url}
                 slug={this.props.data.wordpressPage.slug}
         />
       </div>
@@ -163,7 +164,6 @@ export const pageQuery = graphql`
                trustpilot_subtitle
                cta_btn
                cta_title
-               footer_logo
                projects{
                  project_link
                  project_title
@@ -173,11 +173,9 @@ export const pageQuery = graphql`
                  legal_title
                }
                media_social_title
-               media_social_icons{
-                 media_link
-                 media_logo{
-                   source_url
-                 }
+               media_social_urls{
+                 whatsapp_url
+                 instagram_url
                }
             }
         }

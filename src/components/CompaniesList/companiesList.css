@@ -3,6 +3,8 @@
 }
 .companies-list .title{
     color: black;
+    max-width: 50%;
+    margin: 0 auto 50px;
 }
 .companies-list .logo-list{
     display: flex;
@@ -14,6 +16,8 @@
 .companies-list .logo-list img{
     margin-top: 20px;
 }
-.companies-list .title{
-    margin-bottom: 50px;
+@media screen and (max-width: 760px){
+    .companies-list .title{
+        max-width: 90%;
+    }
 }

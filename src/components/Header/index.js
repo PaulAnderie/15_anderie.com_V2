@@ -9,14 +9,14 @@ class Header extends Component {
       <header className='header'
       >
         <div className='logoWrapper'>
-          <Link  className='logo' to="/ukraine-version/">
+          <Link  className='logo' to="/">
             <img src={logo} alt=""/>
           </Link>
           <a className='linkedin' href={linkedinUrl}>
             <img src={linkedinImg} alt=""/>
           </a>
         </div>
-        <button className='btn'>
+        <button className='btn' onClick={()=>{Calendly.initPopupWidget({url: 'https://calendly.com/paul-anderie/ask-me-anything'});return false;}}>
             {btn}
         </button>
       </header>

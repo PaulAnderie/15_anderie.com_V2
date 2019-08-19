@@ -41,7 +41,6 @@ body{
 img{
     height: auto;
     max-width: 100%;
-
 }
 h1 {
   font-weight: 900;
@@ -66,13 +65,14 @@ h4{
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 0;
+    margin: 0;
 }
 
 p {
   font-size: 20px;
   line-height: 30px;
 }
+
 .btn{
     background: #173FCD;
     border-radius: 15px;
@@ -87,6 +87,10 @@ p {
 }
 .btn:hover{
     background: #0c00cd;
+}
+.btn:focus {
+    outline: none;
+    border: none;
 }
 .wrapper{
     max-width: 1160px;
@@ -109,7 +113,8 @@ p {
     border-radius: 15px;
 }
 .btn.white:hover, .btn.white-with-border:hover{
-    background-color: rgba(0, 0, 0, 0.05) !important;
+    background-color: rgb(129, 129, 129) !important;
+    color: white;
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -121,8 +126,18 @@ p {
         font-size: 16px;
         border-radius: 15px;
     }
+    h2 {
+        font-size: 22px;
+        line-height: 36px;
+    }
 }
 @media  screen and (max-width: 760px) {
+    .wrapper{
+        margin: 0 auto 30px;
+    }
+    .subtitle{
+        display: none;
+    }
     .btn{
         font-size: 14px;
         border-radius: 15px;

@@ -8,7 +8,7 @@ class Services extends Component {
     return (
       <div className='services wrapper '>
         <h4>{title}</h4>
-        <p>{subtitle}</p>
+        <p className='subtitle'>{subtitle}</p>
         <div className='card-section scrollbar'>
           {cards && cards.map((card, index) => {
           return (
