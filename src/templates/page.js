@@ -13,7 +13,6 @@ import Footer from "../components/Footer/Footer";
 class IndexPage extends Component {
   render() {
     const pageData = this.props.data.wordpressPage.acf;
-    console.log(this.props.data.wordpressPage.slug);
 
     return (
       <div>

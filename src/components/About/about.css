@@ -3,7 +3,6 @@
 }
 .about{
     position: relative;
-    top: -40px;
     background: #FFFFFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -68,7 +67,8 @@
         font-size: 20px;
     }
     .profile .profile-img{
-        width: 35%;
+        width: 90px;
+        height: 90px;
     }
     .about .btn{
         padding: 10px 20px;
@@ -98,8 +98,8 @@
         font-size: 12px;
     }
     .profile .profile-img {
-        height: 35px;
-        width: auto;
+        height: 45px;
+        width: 45px;
     }
     .about .btn{
         font-size: 10px;

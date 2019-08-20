@@ -17,6 +17,12 @@
     height: 50px;
     width: auto;
 }
+.small-header .logo img{
+    height: 50px;
+}
+.small-header .linkedin img{
+    height: 40px;
+}
 .header .linkedin,
 .header .logo{
     line-height: 0;
@@ -28,6 +34,15 @@
 }
 .header .btn{
     padding: 13px 40px;
+}
+.small-header .btn{
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.header .linkedin img,
+.header .logo img,
+.header .btn{
+    transition: all .3s linear;
 }
 @media screen and (max-width: 760px){
     .header{
