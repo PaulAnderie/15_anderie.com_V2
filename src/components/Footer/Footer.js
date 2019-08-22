@@ -17,10 +17,10 @@ class Footer extends Component {
             <img src={foooterLogo} alt=""/>
           </Link>
           <div className='flags'>
-            <Link  className={`logo ${slug !== 'home' && 'disable'}`} to="/home/">
+            <Link  className={`logo ${slug !== 'de' && 'disable'}`} to="/de/">
               <img src={german} alt=""/>
             </Link>
-            <Link className={`linkedin ${slug === 'home' && 'disable'}`} to="/">
+            <Link className={`linkedin ${slug === 'de' && 'disable'}`} to="/">
               <img src={english} alt=""/>
             </Link>
           </div>
