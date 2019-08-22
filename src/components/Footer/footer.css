@@ -34,14 +34,14 @@
     justify-content: space-between;
 }
 .footer .media-icons a{
-    font-size: 40px;
-    color: black;
-    padding: 10px;
+    font-size: 30px;
+    color: #1f3b73;
+    padding: 3px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid #1f3b73;
     background-color: #ECECEC;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
 }
 .footer .media-icons a:hover{
     background-color: rgba(121, 121, 121, 0.61);

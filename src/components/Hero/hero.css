@@ -33,7 +33,7 @@
 }
 @media screen and (max-width: 760px) {
     .hero{
-        height: 275px;
+        min-height: 60vmax;
         top: 55px;
     }
     .hero .title{

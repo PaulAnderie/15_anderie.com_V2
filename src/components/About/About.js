@@ -10,7 +10,7 @@ class About extends Component {
             <div className='profile '>
               <img className='profile-img' src={avatar} alt=""/>
               <div className='profile-position'>
-                <h1>{name}</h1>
+                <h2>{name}</h2>
                 <span>{location}</span>
               </div>
             </div>

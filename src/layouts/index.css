@@ -1,27 +1,26 @@
 /*@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');*/
 @font-face {
-    font-family: "Poppins-Black";
+    font-family: "Poppins";
     src: url("../assets/fonts/Poppins-Black.ttf") ;
     font-weight: 900;
-
 }
 @font-face {
-    font-family: "Poppins-Regular";
+    font-family: "Poppins";
     src: url("../assets/fonts/Poppins-Regular.ttf") ;
     font-weight: normal;
 }
 @font-face {
-    font-family: "Poppins-Bold";
+    font-family: "Poppins";
     src: url("../assets/fonts/Poppins-Bold.ttf");
     font-weight: bold;
 }
 @font-face {
-    font-family: "Poppins-Light";
+    font-family: "Poppins";
     src: url("../assets/fonts/Poppins-Light.ttf");
     font-weight: 300;
 }
 @font-face {
-    font-family: "Poppins-SemiBold";
+    font-family: "Poppins";
     src: url("../assets/fonts/Poppins-SemiBold.ttf");
     font-weight: 600;
 }
@@ -126,6 +125,8 @@ p {
         font-size: 16px;
         border-radius: 15px;
     }
+}
+@media screen and (max-width: 960px){
     h2 {
         font-size: 22px;
         line-height: 36px;
