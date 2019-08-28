@@ -14,7 +14,7 @@ class Services extends Component {
           return (
             <div key={index} className='card'>
               <h3>{card.service_title}</h3>
-              <p>{card.service_description}</p>
+              <p dangerouslySetInnerHTML={{ __html: card.service_description }}/>
             </div>)
           })}
         </div>

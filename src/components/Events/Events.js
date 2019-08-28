@@ -16,7 +16,7 @@ class Events extends Component {
         <div className='cards-event scrollbar'>
           {cards && cards.map((card, index) => {
             return (
-              <a key={index} href={card.target_blank} className='card'>
+              <a key={index} href={card.target_blank} target="_blank" className='card'>
                 <div className='card-preview'>
                   <img className='card-img' src={card.event_img.source_url} alt=""/>
                   {card.event_position_icon && <span className='position-icon' style={{backgroundImage: `url(${card.event_position_icon.source_url})`}}/>}
