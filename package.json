@@ -17,6 +17,8 @@
     "gatsby-source-wordpress": "^2.0.62",
     "gatsby-transformer-sharp": "^2.2.6",
     "nuka-carousel": "^4.5.9",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
     "react-helmet": "^5.2.0",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1",
