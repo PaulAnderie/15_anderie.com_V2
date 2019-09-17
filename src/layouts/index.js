@@ -7,7 +7,7 @@ const TemplateWrapper = ({ children,  data }) => (
 
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Paul Anderie - Digital Marketing Trainer & Consultant"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
