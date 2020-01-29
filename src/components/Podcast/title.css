@@ -1,0 +1,45 @@
+.hero{
+    position: relative;
+    top: 100px;
+    min-height: calc(100vh - 100px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.hero .title, .hero .description{
+   max-width: 850px;
+   color: white;
+   text-align: center;
+}
+.hero .description{
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 960px) {
+    .hero .title{
+        font-size: 30px;
+    }
+    .hero .description{
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .hero{
+        min-height: 60vmax;
+        top: 55px;
+    }
+    .hero .title{
+        font-size: 18px;
+    }
+    .hero .description{
+        display: none;
+    }
+}

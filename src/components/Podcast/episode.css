@@ -1,0 +1,75 @@
+.episode-wrapper{
+
+}
+.episode{
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 30px 80px 120px;
+}
+.episode .btn{
+    padding: 20px 50px;
+    font-weight: 900;
+    font-size: 28px;
+    float: right;
+}
+.episode .episode-description, .episode .title{
+    margin: 0 15px;
+}
+.episode .title{
+    margin-bottom: 30px;
+}
+
+.episode .episode-header a {
+    text-decoration: none;
+}
+
+.episode .episode-header a>h2 {
+    color: #000000;
+}
+
+.episode .episode-player audio {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 960px) {
+    .episode{
+        padding: 25px 30px 40px;
+    }
+    .episode .title{
+        font-size: 18px;
+    }
+    .episode .episode-header{
+        margin-bottom: 10px;
+    }
+    .episode .btn{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .episode .episode-description{
+        margin: 5px 15px 0;
+
+    }
+}
+@media screen and (max-width: 760px) {
+    .episode{
+        padding: 12px 20px 30px;
+    }
+    .episode .title{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .episode .btn{
+        font-size: 10px;
+        padding: 7px 10px;
+        white-space: nowrap;
+    }
+    .episode .episode-description{
+        margin: 15px 0 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

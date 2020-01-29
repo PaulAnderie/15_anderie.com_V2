@@ -26,5 +26,18 @@ module.exports = `
                 }
             }
         }
+
+        allWordpressWpPodcast {
+            edges {
+                node {
+                    id
+                    title
+                    slug
+                    download_link
+                    date
+                    content
+                }
+            }
+        }
     }
 `
