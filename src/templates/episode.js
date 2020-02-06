@@ -23,7 +23,7 @@ class EpisodePage extends Component {
                     btn={pageData.header_btn}
             />
             <Hero   title={episodeData.title}
-                    background={pageData.hero_background && pageData.hero_background.source_url}
+                    background={episodeData.featured_media ? episodeData.featured_media.source_url : (pageData.hero_background && pageData.hero_background.source_url)}
             />
             <EpisodeBox episodeData={episodeData} />
         </div>
@@ -41,6 +41,9 @@ export const pageQuery = graphql`
             download_link
             date(formatString: "MMMM DD, YYYY")
             content
+            featured_media {
+                source_url
+            }
         }
 
         wordpressPage(slug: { eq: "paul-landing" }) {

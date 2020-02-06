@@ -45,6 +45,9 @@ export const podcastQuery = graphql`
                     download_link
                     date(formatString: "MMMM DD, YYYY")
                     content
+                    featured_media {
+                        source_url
+                    }
                 }
             }
         }

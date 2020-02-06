@@ -7,7 +7,7 @@ class EpisodeBox extends Component {
         return (
             <div className='episode wrapper'>
                 <div className='episode-header'>
-                    <a className='btn' href='https://admin.anderie.com/podcast/feed/'>Subscribe</a>
+                    <a className='btn' href='https://mailchi.mp/389bb5063a99/plauschmitpaul'>Subscribe</a>
                     <a href={'/podcast/' + episodeData.slug}>
                         <h2 className='title'>{episodeData.title}</h2>
                     </a>

@@ -36,6 +36,9 @@ module.exports = `
                     download_link
                     date
                     content
+                    featured_media {
+                        source_url
+                    }
                 }
             }
         }
