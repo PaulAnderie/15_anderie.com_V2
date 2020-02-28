@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import { Helmet } from "react-helmet"
 import EpisodeBox from "../components/Podcast/EpisodeBox";
+import PodcastFooter from "../components/Podcast/PodcastFooter";
 import Hero from "../components/Hero/Hero";
 import Header from "../components/Header";
 
@@ -26,6 +27,7 @@ class EpisodePage extends Component {
                     background={episodeData.featured_media ? episodeData.featured_media.source_url : (pageData.hero_background && pageData.hero_background.source_url)}
             />
             <EpisodeBox episodeData={episodeData} />
+            <PodcastFooter />
         </div>
     )
   }
