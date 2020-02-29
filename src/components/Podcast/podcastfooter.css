@@ -1,0 +1,18 @@
+.podcast-buttons {
+    text-align: center;
+}
+.podcast-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.podcast-buttons a{
+    margin-top: 40px;
+}
+@media screen and (max-width: 760px){
+    .podcast-buttons {
+
+    }
+}
