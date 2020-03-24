@@ -12,6 +12,7 @@
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.37",
     "gatsby-paginate": "^1.0.13",
+    "gatsby-plugin-google-tagmanager": "^2.2.1",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-source-wordpress": "^2.0.62",
@@ -21,6 +22,7 @@
     "react-dom": "16.8.0",
     "react-helmet": "^5.2.0",
     "react-slick": "^0.25.2",
+    "sharp": "^0.25.2",
     "slick-carousel": "^1.8.1",
     "trustpilot": "^3.2.0"
   },
